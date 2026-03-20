@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/xXs9THS.png">
 
-> A custom, lightweight Minecraft: Java Edition launcher built with JavaFX — featuring Microsoft authentication, automatic version installation, Fabric support, and a sleek dark/light UI.
+ A custom, lightweight Minecraft: Java Edition launcher built with JavaFX — featuring Microsoft authentication, automatic version installation, Fabric support, and a sleek dark/light UI.
 
 ---
 
