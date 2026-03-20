@@ -1,36 +1,30 @@
-/* Root background */
+
 .root {
     -fx-background-color: #0f0f12;
 }
 
-/* center container */
 .center-wrap {
     -fx-background-color: transparent;
 }
 
-/* logo text */
 .launcher-text {
     -fx-text-fill: rgba(255,255,255,0.70);
-    -fx-letter-spacing: 2px; /* bazı FX sürümlerinde ignore edilebilir */
+    -fx-letter-spacing: 2px; 
 }
 
-/* input container spacing */
 .inputs {
     -fx-background-color: transparent;
 }
 
-/* underline row */
 .underline-row {
     -fx-background-color: transparent;
 }
 
-/* icon */
 .field-icon {
     -fx-text-fill: rgba(255,255,255,0.85);
     -fx-font-size: 16px;
 }
 
-/* username field */
 .underline-field {
     -fx-background-color: transparent;
     -fx-text-fill: white;
@@ -47,7 +41,6 @@
     -fx-border-color: rgba(255,152,0,0.85);
 }
 
-/* combobox */
 .underline-combo {
     -fx-background-color: transparent;
     -fx-font-size: 14px;
@@ -65,7 +58,6 @@
     -fx-border-color: rgba(255,152,0,0.85);
 }
 
-/* dropdown list */
 .combo-box-popup .list-view {
     -fx-background-color: #17171c;
     -fx-border-color: rgba(255,255,255,0.10);
@@ -101,7 +93,7 @@
 
 .dialog-yes {
     -fx-background-radius: 12;
-    -fx-background-color: #f59e0b; /* turuncu */
+    -fx-background-color: #f59e0b;
     -fx-text-fill: #111;
     -fx-font-weight: 700;
     -fx-padding: 8 16 8 16;
@@ -123,7 +115,6 @@
     -fx-background-color: rgba(255,255,255,0.16);
 }
 
-/* login button */
 .login-button {
     -fx-background-color: rgba(255,152,0,0.95);
     -fx-text-fill: #111;
@@ -139,10 +130,9 @@
 }
 
 .login-button:disabled {
-    -fx-opacity: 0.95; /* disabled olunca solmasın */
+    -fx-opacity: 0.95;
 }
 
-/* progress fill (inside button) */
 .login-progress-fill {
     -fx-background-color: rgba(255, 152, 0, 0.45);
     -fx-background-radius: 28px;
@@ -153,7 +143,6 @@
     -fx-view-order: -1000;
 }
 
-/* switch button */
 .theme-switch {
     -fx-background-color: rgba(255,255,255,0.10);
     -fx-background-radius: 999;
@@ -170,7 +159,6 @@
     -fx-background-color: rgba(255,255,255,0.16);
 }
 
-/* LIGHT MODE OVERRIDES */
 .root.light {
     -fx-background-color: #f4f6fb;
 }
@@ -195,17 +183,14 @@
     -fx-background-color: rgba(0,0,0,0.10);
 }
 
-/* LIGHT MODE – combobox selected text */
 .root.light .underline-combo .list-cell {
     -fx-text-fill: #111;
 }
 
-/* dropdown ok (arrow) */
 .root.light .combo-box-base {
     -fx-text-fill: #111;
 }
 
-/* prompt text */
 .root.light .combo-box-base .text {
     -fx-fill: #111;
 }
@@ -234,7 +219,6 @@
     -fx-background-color: transparent;
 }
 
-/* Window Buttons */
 .window-button {
     -fx-background-color: transparent;
     -fx-text-fill: white;
@@ -556,7 +540,6 @@
     -fx-opacity: 0.6;
 }
 
-/* Microsoft Account Label */
 .ms-account-label {
     -fx-text-fill: #2ecc71;
     -fx-font-size: 11px;
@@ -584,13 +567,11 @@
     -fx-padding: 0;
     -fx-cursor: hand;
 
-    /* logo */
     -fx-background-image: url("microsoft.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-background-size: contain;
 
-    /* küçük yumuşak geçiş */
     -fx-opacity: 0.92;
 }
 
