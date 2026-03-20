@@ -1,0 +1,606 @@
+/* Root background */
+.root {
+    -fx-background-color: #0f0f12;
+}
+
+/* center container */
+.center-wrap {
+    -fx-background-color: transparent;
+}
+
+/* logo text */
+.launcher-text {
+    -fx-text-fill: rgba(255,255,255,0.70);
+    -fx-letter-spacing: 2px; /* bazı FX sürümlerinde ignore edilebilir */
+}
+
+/* input container spacing */
+.inputs {
+    -fx-background-color: transparent;
+}
+
+/* underline row */
+.underline-row {
+    -fx-background-color: transparent;
+}
+
+/* icon */
+.field-icon {
+    -fx-text-fill: rgba(255,255,255,0.85);
+    -fx-font-size: 16px;
+}
+
+/* username field */
+.underline-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255,255,255,0.35);
+    -fx-font-size: 14px;
+
+    -fx-padding: 10 4 10 4;
+
+    -fx-border-color: rgba(255,255,255,0.22);
+    -fx-border-width: 0 0 1 0;
+}
+
+.underline-field:focused {
+    -fx-border-color: rgba(255,152,0,0.85);
+}
+
+/* combobox */
+.underline-combo {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+
+    -fx-border-color: rgba(255,255,255,0.22);
+    -fx-border-width: 0 0 1 0;
+}
+
+.underline-combo .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.underline-combo:focused {
+    -fx-border-color: rgba(255,152,0,0.85);
+}
+
+/* dropdown list */
+.combo-box-popup .list-view {
+    -fx-background-color: #17171c;
+    -fx-border-color: rgba(255,255,255,0.10);
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(255,255,255,0.06);
+}
+
+.dialog-card {
+    -fx-background-color: rgba(18,18,18,0.98);
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-width: 1;
+}
+
+.dialog-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.dialog-text {
+    -fx-text-fill: rgba(255,255,255,0.78);
+    -fx-font-size: 13px;
+}
+
+.dialog-yes {
+    -fx-background-radius: 12;
+    -fx-background-color: #f59e0b; /* turuncu */
+    -fx-text-fill: #111;
+    -fx-font-weight: 700;
+    -fx-padding: 8 16 8 16;
+}
+
+.dialog-yes:hover {
+    -fx-background-color: #ffb020;
+}
+
+.dialog-no {
+    -fx-background-radius: 12;
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-padding: 8 16 8 16;
+}
+
+.dialog-no:hover {
+    -fx-background-color: rgba(255,255,255,0.16);
+}
+
+/* login button */
+.login-button {
+    -fx-background-color: rgba(255,152,0,0.95);
+    -fx-text-fill: #111;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 28px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: rgba(255,152,0,1.0);
+}
+
+.login-button:disabled {
+    -fx-opacity: 0.95; /* disabled olunca solmasın */
+}
+
+/* progress fill (inside button) */
+.login-progress-fill {
+    -fx-background-color: rgba(255, 152, 0, 0.45);
+    -fx-background-radius: 28px;
+}
+
+.topbar {
+    -fx-padding: 18 22 0 0;
+    -fx-view-order: -1000;
+}
+
+/* switch button */
+.theme-switch {
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-background-radius: 999;
+    -fx-padding: 8 14 8 14;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-color: rgba(255,255,255,0.18);
+    -fx-border-radius: 999;
+    -fx-border-width: 1;
+}
+
+.theme-switch:hover {
+    -fx-background-color: rgba(255,255,255,0.16);
+}
+
+/* LIGHT MODE OVERRIDES */
+.root.light {
+    -fx-background-color: #f4f6fb;
+}
+
+.root.light .launcher-text,
+.root.light .field-icon {
+    -fx-text-fill: #111;
+}
+
+.root.light .underline-field,
+.root.light .underline-combo {
+    -fx-text-fill: #111;
+}
+
+.root.light .theme-switch {
+    -fx-text-fill: #111;
+    -fx-border-color: rgba(0,0,0,0.18);
+    -fx-background-color: rgba(0,0,0,0.06);
+}
+
+.root.light .theme-switch:hover {
+    -fx-background-color: rgba(0,0,0,0.10);
+}
+
+/* LIGHT MODE – combobox selected text */
+.root.light .underline-combo .list-cell {
+    -fx-text-fill: #111;
+}
+
+/* dropdown ok (arrow) */
+.root.light .combo-box-base {
+    -fx-text-fill: #111;
+}
+
+/* prompt text */
+.root.light .combo-box-base .text {
+    -fx-fill: #111;
+}
+
+.root.light .combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+}
+
+.root.light .combo-box-popup .list-view .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #111;
+}
+
+.root.light .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+.root.light .combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #e3f2fd;
+}
+
+.title-bar {
+    -fx-padding: 8px 8px 8px 0;
+    -fx-background-color: transparent;
+}
+
+/* Window Buttons */
+.window-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.window-button:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.close-button:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.minimize-button {
+    -fx-font-size: 24px;
+    -fx-padding: 4px 16px 12px 16px;
+}
+
+.light .window-button {
+    -fx-text-fill: #1a1a1a;
+}
+
+.light .window-button:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;}
+
+.light .close-button:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.topbar-left {
+    -fx-padding: 18 0 0 22;
+    -fx-view-order: -1000;
+}
+
+.topbar {
+    -fx-padding: 18 22 0 0;
+    -fx-view-order: -1000;
+}
+
+.settings-card {
+    -fx-background-color: rgba(18,18,18,0.98);
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-width: 1;
+}
+
+.root.light .settings-card {
+    -fx-background-color: white;
+    -fx-border-color: rgba(0,0,0,0.12);
+}
+
+.settings-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+}
+
+.root.light .settings-title {
+    -fx-text-fill: #111;
+}
+
+.settings-label {
+    -fx-text-fill: rgba(255,255,255,0.9);
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+}
+
+.root.light .settings-label {
+    -fx-text-fill: #333;
+}
+
+.settings-value-label {
+    -fx-text-fill: rgb(255,152,0);
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.settings-checkbox {
+    -fx-text-fill: rgba(255,255,255,0.85);
+    -fx-font-size: 14px;
+}
+
+.root.light .settings-checkbox {
+    -fx-text-fill: #333;
+}
+
+.settings-checkbox .box {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.root.light .settings-checkbox .box {
+    -fx-background-color: rgba(0,0,0,0.05);
+    -fx-border-color: rgba(0,0,0,0.3);
+}
+
+.settings-checkbox:selected .box {
+    -fx-background-color: rgb(255,152,0);
+    -fx-border-color: rgb(255,152,0);
+}
+
+.settings-checkbox:selected .mark {
+    -fx-background-color: #111;
+}
+
+.settings-textfield {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255,255,255,0.4);
+    -fx-font-size: 13px;
+    -fx-padding: 8px 12px;
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.root.light .settings-textfield {
+    -fx-background-color: rgba(0,0,0,0.05);
+    -fx-text-fill: #111;
+    -fx-prompt-text-fill: rgba(0,0,0,0.4);
+    -fx-border-color: rgba(0,0,0,0.2);
+}
+
+.settings-textfield:focused {
+    -fx-border-color: rgb(255,152,0);
+}
+
+.settings-slider .track {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-background-radius: 4;
+}
+
+.root.light .settings-slider .track {
+    -fx-background-color: rgba(0,0,0,0.15);
+}
+
+.settings-slider .thumb {
+    -fx-background-color: rgb(255,152,0);
+    -fx-background-radius: 10;
+}
+
+.settings-slider .thumb:hover {
+    -fx-background-color: rgb(255,170,50);
+}
+
+.settings-button {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 8px 16px;
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.root.light .settings-button {
+    -fx-background-color: rgba(0,0,0,0.08);
+    -fx-text-fill: #111;
+    -fx-border-color: rgba(0,0,0,0.15);
+}
+
+.settings-button:hover {
+    -fx-background-color: rgba(255,255,255,0.15);
+}
+
+.root.light .settings-button:hover {
+    -fx-background-color: rgba(0,0,0,0.12);
+}
+
+.settings-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.settings-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.settings-scroll .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.settings-scroll .scroll-bar .thumb {
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 4;
+}
+
+.root.light .settings-scroll .scroll-bar .thumb {
+    -fx-background-color: rgba(0,0,0,0.3);
+}
+
+.settings-scroll .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255,255,255,0.4);
+}
+
+.root.light .settings-scroll .scroll-bar .thumb:hover {
+    -fx-background-color: rgba(0,0,0,0.4);
+}
+
+.separator .line {
+    -fx-border-color: rgba(255,255,255,0.1);
+    -fx-border-width: 0.5 0 0 0;
+}
+
+.root.light .separator .line {
+    -fx-border-color: rgba(0,0,0,0.1);
+}
+
+.light .dialog-no {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333333;
+}
+
+.light .dialog-no:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.light .dialog-yes {
+    -fx-background-color: rgb(255,152,0);
+    -fx-text-fill: white;
+}
+
+.light .dialog-yes:hover {
+    -fx-background-color: rgb(255,152,0);
+}
+
+.devlog-root {
+    -fx-background-color: #1e1e1e;
+}
+
+.light .devlog-root {
+    -fx-background-color: #ffffff;
+}
+
+.devlog-textarea {
+    -fx-background-color: #252526;
+    -fx-text-fill: #d4d4d4;
+    -fx-control-inner-background: #252526;
+}
+
+.light .devlog-textarea {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333333;
+    -fx-control-inner-background: #f5f5f5;
+}
+
+.devlog-buttons {
+    -fx-background-color: #2d2d30;
+}
+
+.light .devlog-buttons {
+    -fx-background-color: #f0f0f0;
+}
+
+.devlog-button {
+    -fx-background-color: #3e3e42;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.devlog-button:hover {
+    -fx-background-color: #4e4e52;
+}
+
+.light .devlog-button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333333;
+}
+
+.light .devlog-button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.ms-auth-button {
+    -fx-background-color: linear-gradient(to bottom, #2672ec, #1e5bb8);
+    -fx-background-radius: 12;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-color: rgba(255,255,255,0.15);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 2);
+}
+
+.ms-auth-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #3080ff, #2672ec);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.ms-auth-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1e5bb8, #164a99);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.ms-auth-button:disabled {
+    -fx-opacity: 0.6;
+}
+
+/* Microsoft Account Label */
+.ms-account-label {
+    -fx-text-fill: #2ecc71;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(46, 204, 113, 0.12);
+    -fx-padding: 6 10 6 10;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(46, 204, 113, 0.3);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.root.light .ms-auth-button {
+    -fx-background-color: linear-gradient(to bottom, #2672ec, #1e5bb8);
+    -fx-border-color: rgba(0,0,0,0.1);
+}
+
+.root.light .ms-auth-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #3080ff, #2672ec);
+}
+
+.ms-logo-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+
+    /* logo */
+    -fx-background-image: url("microsoft.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+
+    /* küçük yumuşak geçiş */
+    -fx-opacity: 0.92;
+}
+
+.ms-logo-button:hover {
+    -fx-opacity: 1.0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 18, 0.2, 0, 0);
+}
+
+.ms-logo-button:pressed {
+    -fx-scale-x: 0.96;
+    -fx-scale-y: 0.96;
+}
+

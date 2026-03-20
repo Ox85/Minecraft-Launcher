@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="spicy.launcher.ui.MainViewController"
+           prefWidth="1280" prefHeight="720"
+           stylesheets="@styles.css"
+           styleClass="root">
+
+    <VBox alignment="CENTER" spacing="26" styleClass="center-wrap" pickOnBounds="false">
+
+        <!-- LOGO -->
+        <VBox alignment="CENTER" spacing="14">
+            <ImageView fitWidth="300" fitHeight="300" preserveRatio="true">
+                <image>
+                    <Image url="@logo.png"/>
+                </image>
+            </ImageView>
+
+            <Label text="L A U N C H E R" styleClass="launcher-text">
+                <font>
+                    <Font name="Verdana" size="16"/>
+                </font>
+            </Label>
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="14" styleClass="inputs">
+
+            <HBox alignment="CENTER" spacing="10" styleClass="underline-row" prefWidth="420" maxWidth="420">
+                <Label text="👤" styleClass="field-icon"/>
+                <TextField fx:id="usernameField"
+                           promptText="Kullanıcı Adı"
+                           styleClass="underline-field"
+                           prefWidth="360"/>
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10" styleClass="underline-row" prefWidth="420" maxWidth="420">
+                <Label text="📦" styleClass="field-icon"/>
+                <ComboBox fx:id="versionCombo"
+                          promptText="Versiyon Seç"
+                          styleClass="underline-combo"
+                          prefWidth="360"/>
+            </HBox>
+
+        </VBox>
+
+        <StackPane fx:id="playButtonWrap"
+                   prefWidth="260" prefHeight="52"
+                   maxWidth="260" maxHeight="52">
+
+            <Region fx:id="playProgressFill"
+                    prefHeight="52"
+                    maxHeight="52"
+                    StackPane.alignment="CENTER_LEFT"
+                    styleClass="login-progress-fill"
+                    visible="false"
+                    managed="false"/>
+
+            <Button fx:id="playButton"
+                    text="Giriş Yap"
+                    styleClass="login-button"
+                    prefWidth="260"
+                    prefHeight="52"/>
+        </StackPane>
+
+    </VBox>
+
+    <HBox StackPane.alignment="TOP_LEFT"
+          alignment="TOP_LEFT"
+          styleClass="topbar-left"
+          pickOnBounds="false">
+        <ToggleButton fx:id="themeToggle"
+                      text="🌙"
+                      styleClass="theme-switch"/>
+    </HBox>
+
+    <VBox fx:id="msBox"
+          StackPane.alignment="BOTTOM_LEFT"
+          alignment="BOTTOM_LEFT"
+          spacing="8"
+          pickOnBounds="false">
+        <padding>
+            <Insets left="10" bottom="10"/>
+        </padding>
+
+        <Button fx:id="msAuthButton"
+                text=""
+                styleClass="ms-logo-button"
+                prefWidth="48"
+                prefHeight="48"
+                focusTraversable="false"/>
+    </VBox>
+
+    <HBox StackPane.alignment="TOP_RIGHT"
+          alignment="TOP_RIGHT"
+          styleClass="topbar"
+          pickOnBounds="false">
+
+        <Button fx:id="minimizeButton"
+                text="−"
+                onAction="#handleMinimize"
+                styleClass="window-button, minimize-button"/>
+
+        <Button fx:id="closeButton"
+                text="✕"
+                onAction="#handleClose"
+                styleClass="window-button, close-button"/>
+    </HBox>
+
+    <HBox StackPane.alignment="BOTTOM_RIGHT"
+          alignment="BOTTOM_RIGHT"
+          pickOnBounds="false">
+        <padding>
+            <Insets right="16" bottom="16"/>
+        </padding>
+        <Button fx:id="settingsButton"
+                text="⚙"
+                styleClass="theme-switch">
+        </Button>
+    </HBox>
+
+</StackPane>
